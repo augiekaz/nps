@@ -8,18 +8,12 @@ body {
 
 body {
     margin: 0;
+    font-family: open sans, sans-serif;
 }
 
 .container-fluid {
     margin-right: 0px;
     margin-left: 0px;
-}
-
-#container {
-    width: 960px;
-    border: 1px solid black;
-    margin: 0 auto;
-    overflow: hidden;
 }
 /* Navigation */
 
@@ -40,17 +34,13 @@ body {
     color: #5f5f5f;
 }
 
-header {
-    height: 500px;
-    background-image: url('../img/storiesBG.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.navbar-default .navbar-toggle {
+    border: none;
 }
 
-nav {
-    float: right;
-    margin: 0;
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
+    height: 3px;
 }
 
 li {
@@ -58,6 +48,15 @@ li {
     padding: 10px;
     text-transform: uppercase;
     font-family: helvetica;
+}
+/*header */
+
+header {
+    height: 500px;
+    background-image: url('../img/storiesBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .banner-left {
@@ -73,9 +72,9 @@ li {
     width: 700px;
 }
 
-.banner-left p {
+.banner-left h1 {
     color: white;
-    font-size: 46px;
+    font-size: 3em;
     opacity: 1.0;
     margin-left: 20px;
     margin-top: 0;
@@ -91,28 +90,36 @@ li {
 }
 
 .banner-left span {
-    font-size: 36px;
+    font-size: 0.5em;
 }
 
-.opacity-bg {
-    /*margin-top: 200px;*/
-    /*position: fixed;*/
-    
-    width: 510px;
-    margin-left: 30px;
-    margin-top: 10px;
-    float: right;
+@media (max-width: @screen-sm) {
+    .banner-left h1 {
+        font-size: 1em;
+    }
 }
 
-.opacity-bg p {
+#caption {
     font-size: 18px;
-    font-family: helvetica;
+    font-family: open sans;
+    font-weight: 300;
+    font-style: italic;
     color: #000;
-    opacity: 1;
-    line-height: 25px;
-    /*z-index: 200;*/
-    
-    background: rgba(204, 204, 204, 0.5);
+    background-color: rgba(255, 255, 255, 0.42);
+}
+/* Body */
+
+.subtitles {
+    color: #cc663c;
+}
+
+#thumbnail {
+    box-shadow: -5px 5px 30px #7c7c7c;
+    margin-bottom: 15px;
+}
+
+#stories h2 {
+    margin-left: -100px;
 }
 
 #video-leads {
@@ -199,4 +206,11 @@ li {
 .video-wrapper h1 {
     font-size: 18px;
     float: left;
+}
+
+@media (max-width: @screen-xs) {
+    .banner-left p {
+        font-size: 2em;
+        color: red;
+    }
 }
