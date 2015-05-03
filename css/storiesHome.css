@@ -118,6 +118,10 @@ header {
     margin-bottom: 15px;
 }
 
+#stories {
+    padding-bottom: 300px;
+}
+
 #stories h2 {
     margin-left: -100px;
 }
