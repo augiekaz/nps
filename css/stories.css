@@ -6,6 +6,49 @@ body {
     margin-bottom: 400px;
 }
 
+.container-fluid {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.list-inline {
+    margin-left: 0px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav> li>a {
+    background-color: transparent;
+    color: #333
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #5f5f5f;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
+    height: 3px;
+}
+
+li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: helvetica;
+}
+
 #container {
     width: 960px;
     border: 1px solid black;
@@ -49,43 +92,58 @@ nav {
 }
 
 li {
-    display: inline;
-    padding: 10px;
     text-transform: uppercase;
     font-family: helvetica;
 }
 
+.list-inline>li {
+    padding: 0px;
+}
+
 .banner-left {
-    height: 85px;
-    /*background-color:#b35a2a;*/
-    
+    position: relative;
+    height: 130px;
+    width: 94vw;
+    background-color: #b35a2a;
+    top: 9px;
+    background: rgba(179, 90, 42, 0.78);
+}
+
+.bent-left {
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    width: 3vw;
+    height: 130px;
     background: rgba(179, 90, 42, 0.9);
-    width: 100%;
-    /*-webkit-transform: skew(-205deg);
-	   -moz-transform: skew(-205deg);
-	     -o-transform: skew(-205deg);*/
-    /*margin-right: -20px;*/
-    
-    margin-top: 25px;
-    /*position:absolute; 
-	top:100px;*/
-    /*position: fixed;*/
-    /*opacity: 0.8;*/
+    -webkit-transform: skewY(-30deg);
+    -moz-transform: skewY(-30deg);
+    -o-transform: skewY(-30deg);
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.bent-right {
+    position: absolute;
+    right: 0px;
+    width: 3vw;
+    height: 130px;
+    background: rgba(179, 90, 42, 0.9);
+    -webkit-transform: skewY(30deg);
+    -moz-transform: skewY(30deg);
+    -o-transform: skewY(30deg);
+    z-index: 1;
+    margin-top: 20px;
 }
 
 .banner-left p {
     color: white;
-    font-size: 46px;
     opacity: 1.0;
-    margin-left: 20px;
-    margin-top: 0;
     /*line-height: 85px;*/
     
     text-transform: uppercase;
     font-family: 'Helvetica Neue';
     font-weight: bold;
-    float: right;
-    margin-right: 70px;
     /*-webkit-transform: skew(205deg);
 	   -moz-transform: skew(205deg);
 	     -o-transform: skew(205deg);*/
