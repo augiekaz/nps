@@ -137,6 +137,7 @@ header {
 
 #stories2 {
     background-image: url(../img/white.svg);
+    background-repeat: no-repeat;
     height: 100%;
     padding-bottom: 660px;
 }
@@ -230,10 +231,16 @@ footer {
     font-size: 18px;
     float: left;
 }
+/* Breakpoints */
 
-@media (max-width: @screen-xs) {
-    .banner-left p {
-        font-size: 2em;
-        color: red;
+@media (max-width: 1183px) {
+    #stories2 {
+        padding-bottom: 640px;
+    }
+}
+
+@media (max-width: 992px) {
+    #stories2 {
+        padding-bottom: 0px;
     }
 }
