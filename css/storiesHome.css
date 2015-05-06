@@ -20,11 +20,13 @@ body {
     background-position: center 100%;
 }
 
-ul {
-    margin-bottom: 0px;
-}
 
-.container {}
+
+.container {
+    padding: 50px;
+    top: -20px;
+    position: relative;
+}
 /* Navigation */
 
 .navbar-default {
@@ -38,6 +40,10 @@ ul {
     color: darkgreen;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav> li {

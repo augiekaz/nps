@@ -41,19 +41,32 @@ h1 {
 .navbar-default {
     background-color: transparent;
     border: none;
+    padding-top: 15px;
 }
 
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
-    color: #333
+    color: darkgreen;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav> li {
+    padding: 0px;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    background-color: transparent;
-    color: #5f5f5f;
+    background-color: rgba(143, 107, 42, 0.8);
+    color: #333;
 }
+
+.active {}
 
 .navbar-default .navbar-toggle {
     border: none;
@@ -66,7 +79,7 @@ h1 {
 
 li {
     display: inline;
-    text-transform: uppercase;
+    padding: 10px;
     font-family: helvetica;
 }
 
@@ -105,16 +118,6 @@ header {
     
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-nav {
-    float: right;
-    margin: 0;
-}
-
-li a {
-    color: green;
-    text-transform: none;
 }
 
 .list-inline>li {
@@ -182,6 +185,7 @@ li a {
 }
 
 .author {
+    padding-top: 20px;
     padding-right: 30px;
 }
 /* Article Styles */
@@ -267,24 +271,6 @@ article {
     padding: 0;
 }
 
-.next-section li {
-    float: left;
-    /*width: 275px;*/
-    
-    text-transform: none;
-    margin: 20px;
-    padding: 0;
-    /*border: 1px solid black;*/
-}
-
-.next-section h5 {
-    /*border: 1px solid black;*/
-    
-    margin: 0;
-    float: right;
-    margin-right: 38px;
-}
-
 .next-section p {
     /*border: 1px solid black;*/
     
@@ -296,11 +282,31 @@ article {
     /*border: 1px solid black;*/
 }
 
+#img-bottom {
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
 #last-section {
     background-image: url('../img/white.svg');
-    background-position: center 90%;
+    background-position: center 85%;
     background-repeat: no-repeat;
-    padding-bottom: 660px;
+    padding-bottom: 620px;
+}
+
+#related img {
+    width: 100%;
+}
+
+#related h3 {
+    color: rgba(160, 148, 81, 1);
+}
+
+#related p {
+    color: rgba(160, 148, 81, 1);
+    font-family: open sans, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5em;
 }
 
 footer {
@@ -314,13 +320,15 @@ ul {
 
 @media (max-width: 1183px) {
     #last-section {
-        background-position: center 80%;
+        background-position: center 90%;
+        padding-bottom: 500px;
     }
 }
 
 @media (max-width: 992px) {
     #last-section {
-        background-position: center 50%;
+        background-position: center 20%;
+        padding-bottom: 300px;
     }
     #article p {
         padding-right: 0px;
@@ -328,5 +336,9 @@ ul {
     #article h3 {
         padding-left: 0px;
         text-align: center;
+    }
+    #img-bottom {
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
