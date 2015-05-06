@@ -232,7 +232,7 @@ footer {
     float: left;
 }
 /* Breakpoints */
-/*
+
 @media (max-width: 1183px) {
     #stories2 {
         padding-bottom: 640px;
@@ -243,4 +243,4 @@ footer {
     #stories2 {
         padding-bottom: 0px;
     }
-}*/
+}
