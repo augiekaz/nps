@@ -9,6 +9,7 @@ if (viewportWidth < 480) {
                 afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 
+           
                 //using anchorLink
                 if(index == '2'){
                     // TweenLite.to($("#left"), 3, {right:"100%"});

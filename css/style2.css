@@ -70,11 +70,15 @@ header {
 	width:100%;
 	height:10%;
 	background: rgba(218, 119, 68, 1); 
+	/*background-image: url('../img/centennialBeige.svg');*/
 }
 
 header img {
-	max-height: 100%;
+	width:10%;
+	height: 100%;
 }
+
+
 
 .green-slant {
 	width:100%;
@@ -150,6 +154,7 @@ nav ul li a {
 
 	font-size: 1.5vw;
 	max-font-size:18px;
+	min-font-size:12px;
 	font-family: helvetica;
 	color: #fff;
 	width:23%;
@@ -168,7 +173,8 @@ nav ul li a {
 .mosaic {
 	width:100%;
 	height: 100%;
-	background-image: url('imgs/mosaic.png');
+	/*background-image: url('imgs/mosaic.png');*/
+	background-image: url('../img/runner.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -266,6 +272,7 @@ nav ul li a {
 	background: rgba(218, 119, 68, 0.9);
 	width:100%;
 	margin-top: 12%;
+	margin-left: -5%;
 	-webkit-transform: skew(205deg);
 	   -moz-transform: skew(205deg);
 	     -o-transform: skew(205deg);
@@ -444,6 +451,8 @@ nav ul li a {
 	line-height: 150%;
 	color:#fff;
 	padding: 2%;
+	padding-bottom: 0;
+	margin-bottom: 0;
 	font-family: helvetica;
 	/*border: 1px solid white;*/
 }
@@ -615,7 +624,7 @@ nav ul li a {
 .read-more {
 	font-size: 1.5vw;
 	color: rgba(218, 119, 68, 1); 
-	text-align: right;
+	text-align: left;
 	font-family: helvetica;
 	font-weight: bold;
 	margin: 0;
@@ -659,6 +668,11 @@ nav ul li a {
 	/*border: 1px solid blue;*/
 	float: left;
 
+}
+
+#leftJobs ul {
+	margin: 0;
+	padding: 1%;
 }
 
 
@@ -726,12 +740,14 @@ footer {
 	bottom:0px;
     position: absolute;
     z-index: 500;
-    height:40px;
+    height:6%;
     margin-top: 5%;
 }
 
 footer img {
-	max-height: 100%;
+	/*width:1%;*/
+	height:90%;
+	padding: 0.3%;	
 }
 
 footer a {
@@ -780,18 +796,21 @@ header {
 	width:100%;
 	height:10%;
 	background: rgba(218, 119, 68, 1); 
+	/*background-image: url('img/centennialBeige.svg');
+	background-size: cover;*/
 }
 
 header img {
 	max-width: 50%;
 }
 
+
 .green-slant {
 	width:100%;
 	height: 100%;
 	/*-webkit-transform: skew(30deg);
 	   -moz-transform: skew(30deg);
-	     -o-transform: skew(30deg);*/
+	     -o-transform: skew(30deg);
 	background: #475131;
 	/*float: right;*/
 	/*margin-right: -55%;
