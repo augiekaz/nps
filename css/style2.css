@@ -265,7 +265,6 @@ nav ul li a {
 	/*height:13%;*/
 	background: rgba(218, 119, 68, 0.9);
 	width:100%;
-	margin-left:-5%;
 	margin-top: 12%;
 	-webkit-transform: skew(205deg);
 	   -moz-transform: skew(205deg);
@@ -968,7 +967,6 @@ nav ul li a {
 	/*height:13%;*/
 	background: rgba(218, 119, 68, 0.9);
 	width:80%;
-	margin-left:-5%;
 	/*margin-top: 12%;*/
 	-webkit-transform: skew(205deg);
 	   -moz-transform: skew(205deg);

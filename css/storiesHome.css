@@ -1,196 +1,255 @@
+/* General */
+html,
 body {
-	margin: 0;
+    overflow-x: hidden;
+    max-width: 1400px;
 }
 
-#container {
-	width:960px;
-	border: 1px solid black;
-	margin: 0 auto;	
-	overflow: hidden;
+body {
+    max-width: 1400px;
+    margin: 0;
+    font-family: open sans, sans-serif;
+    background: rgba(255, 255, 255, 1);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(72%, rgba(240, 235, 210, 1)), color-stop(100%, rgba(229, 210, 186, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(240, 235, 210, 1) 72%, rgba(229, 210, 186, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(240, 235, 210, 1) 72%, rgba(229, 210, 186, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5d2ba', GradientType=1);
+    background-image: url(../img/white.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center 100%;
 }
 
-header {
-	height:500px;
-	background-image: url('../img/storiesBG.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
 
+
+.container {
+    padding: 50px;
+    top: -20px;
+    position: relative;
+}
+/* Navigation */
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+    padding-top: 15px;
 }
 
-nav {
-	float:right;
-	margin: 0;
+.navbar-default .navbar-nav> li>a {
+    background-color: transparent;
+    color: darkgreen;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav> li {
+    padding: 0px;
+}
+
+.active {
+    background-color: rgba(143, 107, 42, 0.8);
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #333;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333;
+    height: 3px;
 }
 
 li {
-	display: inline;
-	padding:10px;
-	text-transform: uppercase;
-	font-family: helvetica;
+    display: inline;
+    padding: 10px;
+    font-family: helvetica;
 }
+/*header */
 
+header {
+    height: 550px;
+    background-image: url('../img/storiesBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 .banner-left {
-	height:85px;
-	/*background-color:#b35a2a;*/
-	background: rgba(179, 90, 42, 0.9);
-	width:700px;
-	-webkit-transform: skew(-205deg);
-	   -moz-transform: skew(-205deg);
-	     -o-transform: skew(-205deg);
-	margin-right: -20px;
-	margin-top: 25px;
-	/*position:absolute; 
-	top:100px;*/
-	float: right;
-	/*position: fixed;*/
-	/*opacity: 0.8;*/
-
+    height: 85px;
+    /*background-color:#b35a2a;*/
+    
+    padding-left: 70px;
+    position: relative;
+    right: 50px;
+    -webkit-transform: skew(225deg);
+    -moz-transform: skew(225deg);
+    -o-transform: skew(225deg);
+    background: #b35a2a;
+    width: 700px;
 }
 
-.banner-left p {
-
-	color:white;
-	font-size: 46px;
-	opacity: 1.0;
-	margin-left:20px;
-	margin-top: 0;
-	line-height: 85px;
-	text-transform: uppercase;
-	font-family: 'Helvetica Neue';
-	font-weight: bold;
-	float: right;
-	margin-right: 70px;
-	-webkit-transform: skew(205deg);
-	   -moz-transform: skew(205deg);
-	     -o-transform: skew(205deg);
-	 }
-
-
-	 .banner-left span  {
-	font-size: 36px;
-	/*display: block;
-	line-height: 0;
-	text-transform: none;
-	font-weight: normal;
-	margin-left: 100px;*/
-
+.banner-left h1 {
+    color: white;
+    font-size: 4em;
+    opacity: 1.0;
+    margin-top: 0;
+    line-height: 85px;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    -webkit-transform: skew(-225deg);
+    -moz-transform: skew(-225deg);
+    -o-transform: skew(-225deg);
 }
 
-.opacity-bg {
-	/*margin-top: 200px;*/
-	/*position: fixed;*/
-	width:510px;
-	margin-left: 30px;
-	margin-top: 10px;
-	float: right;
-	
-	
-
+.banner-left span {
+    font-size: 0.5em;
 }
 
-.opacity-bg p {
+#caption {
+    font-size: 18px;
+    font-family: open sans;
+    font-weight: 300;
+    font-style: italic;
+    color: #000;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.42);
+}
+/* Body */
 
-	font-size: 18px;
-	font-family: helvetica;
-	color:#000;
-	opacity: 1;
-	line-height: 25px;
-	/*z-index: 200;*/
-	background: rgba(204, 204, 204, 0.5);
-	
+.subtitles {
+    color: #cc663c;
+}
+
+#thumbnail {
+    box-shadow: -5px 5px 30px #7c7c7c;
+    margin-bottom: 15px;
+}
+
+#stories {}
+
+#stories h2 {
+    margin-left: -100px;
+}
+
+#stories2 {
+    padding-bottom: 400px;
 }
 
 #video-leads {
-
-	/*height:1000px;*/
-	background: rgb(245,246,228); /* Old browsers */
-	background: -moz-linear-gradient(left,  rgba(245,246,228,1) 0%, rgba(234,219,193,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(245,246,228,1)), color-stop(100%,rgba(234,219,193,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  rgba(245,246,228,1) 0%,rgba(234,219,193,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  rgba(245,246,228,1) 0%,rgba(234,219,193,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  rgba(245,246,228,1) 0%,rgba(234,219,193,1) 100%); /* IE10+ */
-	background: linear-gradient(to right,  rgba(245,246,228,1) 0%,rgba(234,219,193,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6e4', endColorstr='#eadbc1',GradientType=1 ); /* IE6-9 */
-
-
+    /*height:1000px;*/
+    
+    background: rgb(245, 246, 228);
+    /* Old browsers */
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(245, 246, 228, 1)), color-stop(100%, rgba(234, 219, 193, 1)));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(left, rgba(245, 246, 228, 1) 0%, rgba(234, 219, 193, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    
+    background: -webkit-linear-gradient(left, rgba(245, 246, 228, 1) 0%, rgba(234, 219, 193, 1) 100%);
+    background: linear-gradient(to right, rgba(245, 246, 228, 1) 0%, rgba(234, 219, 193, 1) 100%);
+    /* W3C */
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( start`Colorstr='#f5f6e4', endColorstr='#eadbc1', GradientType=1);
+    /* IE6-9 */
 }
 
+footer {
+    background: #333;
+}
 
 .wrapper {
-	 text-align: center;
+    text-align: center;
 }
 
 .wrapper ul {
-	
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	
-
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper li {
-	float: left;
-	width: 275px;
-	text-transform: none;
-	/*border: 1px solid black;*/
-	text-align: center;
-	padding-left: 30px;
-	padding-left: 30px;
-
+    float: left;
+    width: 275px;
+    text-transform: none;
+    /*border: 1px solid black;*/
+    
+    text-align: center;
+    padding-left: 30px;
+    padding-left: 30px;
 }
 
 .wrapper h1 {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
-
-
-
 .video-wrapper {
-	 text-align: center;
+    text-align: center;
 }
 
 .video-wrapper ul {
-	
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	
-
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 .video-wrapper li {
-	float: left;
-	width: 275px;
-	text-transform: none;
-	/*border: 1px solid black;*/
-	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
-
+    float: left;
+    width: 275px;
+    text-transform: none;
+    /*border: 1px solid black;*/
+    
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .video-wrapper li:last-child {
-	float: right;
-	width: 275px;
-	text-transform: none;
-	/*border: 1px solid black;*/
-	text-align: center;
-	/*padding-left: 20px;*/
-	padding-right: 35px;
-
+    float: right;
+    width: 275px;
+    text-transform: none;
+    /*border: 1px solid black;*/
+    
+    text-align: center;
+    /*padding-left: 20px;*/
+    
+    padding-right: 35px;
 }
-
 
 .video-wrapper h1 {
-	font-size: 18px;
-	float: left;
+    font-size: 18px;
+    float: left;
+}
+/* Breakpoints */
+
+@media (max-width: 1183px) {
+    #stories2 {
+        padding-bottom: 640px;
+    }
 }
 
-
-
-
-
-
+@media (max-width: 992px) {
+    #stories2 {
+        padding-bottom: 0px;
+    }
+    .banner-left h1 {
+        font-size: 2em;
+        padding-left: 50px;
+    }
+}
