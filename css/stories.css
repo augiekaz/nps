@@ -53,7 +53,8 @@ h1 {
 
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
-    color: darkgreen;
+    /*color: darkgreen;*/
+    color:#333;
     padding-top: 0px;
     padding-bottom: 0px;
 }

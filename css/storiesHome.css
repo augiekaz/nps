@@ -37,7 +37,8 @@ body {
 
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
-    color: darkgreen;
+   /* color: darkgreen;*/
+    color:#fff;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -51,7 +52,7 @@ ul {
 }
 
 .active {
-    background-color: rgba(143, 107, 42, 0.8);
+    /*background-color: rgba(143, 107, 42, 0.8);*/
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -95,7 +96,8 @@ header {
     -webkit-transform: skew(225deg);
     -moz-transform: skew(225deg);
     -o-transform: skew(225deg);
-    background: #b35a2a;
+    /*background: #b35a2a;*/
+    background: rgba(218, 119, 68, 1);
     width: 700px;
 }
 
@@ -124,6 +126,8 @@ header {
     font-style: italic;
     color: #000;
     margin-top: 20px;
+    padding: 10px;
+    line-height: 30px;
     background-color: rgba(255, 255, 255, 0.42);
 }
 /* Body */
