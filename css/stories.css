@@ -316,9 +316,18 @@ article {
     font-size: 1.5em;
 }
 
-footer {
+/*footer {
     background-color: black;
     margin-bottom: 0px;
+}*/
+
+footer {
+    background: #000;
+}
+
+footer img {
+    width:5%;
+    margin-left: 1%;
 }
 
 ul {

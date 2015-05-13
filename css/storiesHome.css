@@ -171,8 +171,14 @@ header {
 }
 
 footer {
-    background: #333;
+    background: #000;
 }
+
+footer img {
+    width:5%;
+    margin-left: 1%;
+}
+
 
 .wrapper {
     text-align: center;
