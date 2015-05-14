@@ -38,7 +38,7 @@ body {
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
    /* color: darkgreen;*/
-    color:#fff;
+    color:#333;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -246,6 +246,7 @@ footer img {
     font-size: 18px;
     float: left;
 }
+
 /* Breakpoints */
 
 @media (max-width: 1183px) {
