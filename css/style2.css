@@ -44,14 +44,19 @@ body {
 	/*background-image: url(../img/greenCompressed.svgz);*/
 	/*background-image: url(../img/green.svg);*/
 	/*background-image: url(../img/backgorund_illustrationWhiteBg.svg);*/
-	background-image: url(../img/greeni.svg);
+	/*background-image: url(../img/greeni.svg);*/
+	background-image: url(../img/greeni.png);
 	background-size: cover;
-	/*background-clip: border-box;
-   	background-position: -5px -5px;*/
+	/*background-clip: border-box;*/
+   	background-position: -5px -5px;
 	
 
 }
 
+/*.no-svg body {
+	background-image: url(../img/greeni.png);
+}
+*/
 
 .container {
 	/*border: 1px solid black;*/
@@ -559,7 +564,7 @@ nav ul li a {
 .subCopy {
 	float:right;
 	font-size: 1.3vw;
-	min-font-size:12px;
+	min-font-size: 12px;
 	width:40%;
 	font-family: 'Helvetica Neue';
 	color:white;
