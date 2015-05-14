@@ -6,7 +6,11 @@
     <title>Channel Islands</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -53,7 +57,7 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><img src="img/channelTop.png ">
+        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/santabarbara-channelislands.mp4"><img src="img/channelTop.png "></a>
         </div>
         <div class="col-md-7 ">
             <h2>Behind the Scenes with Yvonne Morales at the Channel Islands National Park</h2>
@@ -74,18 +78,26 @@
             <p>She enjoys seeing projects through to completion because it gives her a sense of fulfillment.</p>
 
             <p>"To know that you had a small part in making that dream come alive for people who had envisioned that, that's just a feeling you never forget," Morales said.</p>
+        </div>
 
+        <div class="col-md-7">
             <p>Morales began working ten years ago at Channel Islands as an administrative assistant in the natural resources management department after studying business at a local college.</p>
 
             <p>"I thought, 'Ok, this is something different. I've never worked for a park,'" she recalled. "But I wanted to get some experience."</p>
 
             <p>What she found at the park was an embracing group of people and a worthwhile cause. She described her fellow employees as not only warm, but committed to the park and the visitors.</p>
-        </div>
-        <div class="col-md-4 col-md-offset-4" style="padding-top:20px;padding-bottom:30px;">
-            <img id="img-bottom" src="img/channelBottom.png">
-        </div>
-        <div class="col-md-12">
+
             <p>"We're a very diverse park in that we have different people from all walks of life," Morales said, adding that she keeps in touch with co-workers from different departments in the park that she described as more of a community than a mere workplace.</p>
+           
+
+             </div>
+            <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
+            <img id="img-bottom" src="img/channelBottom.png">
+            </div>
+
+            </div>
+
+        <div class="col-md-12">
 
             <p>"There's so many opportunities in the park," Morales said. "I mean we have jobs from boat captains to scuba divers, to biologists, administrative positions, and things like that. So, it's a really cool place to work."</p>
 
@@ -130,7 +142,50 @@
         </ul>
     </footer>
     <!-- container -->
+     <script>
+
+$(document).ready(function() {
+
+$('.video').magnificPopup({
+  src: 'https://vimeo.com/channels/staffpicks/124719070',
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>',
+
+               patterns: {
+   
+    vimeo: {
+      index: 'vimeo.com/',
+      id: '/',
+      src: '//player.vimeo.com/video/%id%?autoplay=1'
+    },
+   
+    // you may add here more sources
+
+  },
+
+  srcAction: 'iframe_src',
+
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+    });
+});
+
+</script>
     <script src="../js/jquery-1.11.2.min.js "></script>
+    <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
 </body>
 

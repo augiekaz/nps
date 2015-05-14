@@ -6,7 +6,11 @@
     <title>Atlanta</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -53,7 +57,7 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><img src="img/atlTop.png ">
+        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/atlanta.mp4"><img src="img/atlTop.png "></a>
         </div>
         <div class="col-md-7 ">
             <h2 class="text-center">Park employees share the </br>inspiration of Dr. King</h2>
@@ -85,12 +89,13 @@
             <p>“As a young black woman I get a great sense of pride working here,” Spruill said. “I enjoy sharing Dr. King’s story with visitors from all over the world. My mission is for them to leave our site knowing new information about who Dr. King was and to be positively influenced and inspired.”</p>
             <p>The inspiring example set by Dr. King drew another trailblazer, Michelle Lewis, to the site of his home.</p>
             <p>When most people think of park rangers they imagine rugged men working in the wilderness, but park ranger Michelle Lewis is not a man and her park is not in the wilderness, but squarely in the middle of a bustling city: Atlanta.</p>
-            <p>“There aren’t a lot of women, especially African-American women, working in law enforcement for the National Park Service,” said Michelle Lewis, law enforcement park ranger at Martin Luther King, Jr. National Historic Site. “This shortage has really created some new opportunities.”</p>
         </div>
         <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
             <img id="img-bottom" src="img/atlBottom.png">
         </div>
         <div class="col-md-12">
+
+             <p>“There aren’t a lot of women, especially African-American women, working in law enforcement for the National Park Service,” said Michelle Lewis, law enforcement park ranger at Martin Luther King, Jr. National Historic Site. “This shortage has really created some new opportunities.”</p>
             <p>Lewis, 29, became involved with the National Park Service fresh out of high school. With the Park Service, she has worked a variety of jobs ranging from working with sea turtles and endangered birds at Cape Hatteras National Seashore to working in the interpretation department at Fort Raleigh, North Carolina.</p>
             <p>“The Park Service really does provide an opportunity to get experience in just about whatever you want to do because the work is so varied,” Lewis said. “I was able to try some different things and do some work that I definitely wouldn’t have gotten to do otherwise.”</p>
             <p>
@@ -162,7 +167,50 @@
         </ul>
     </footer>
     <!-- container -->
+        <script>
+
+$(document).ready(function() {
+
+$('.video').magnificPopup({
+  src: 'https://vimeo.com/channels/staffpicks/124719070',
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>',
+
+               patterns: {
+   
+    vimeo: {
+      index: 'vimeo.com/',
+      id: '/',
+      src: '//player.vimeo.com/video/%id%?autoplay=1'
+    },
+   
+    // you may add here more sources
+
+  },
+
+  srcAction: 'iframe_src',
+
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+    });
+});
+
+</script>
     <script src="../js/jquery-1.11.2.min.js "></script>
+     <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
 </body>
 

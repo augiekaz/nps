@@ -6,7 +6,11 @@
     <title>Everglades</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -53,7 +57,7 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><img src="img/evergladesTop.png">
+        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/everglades.mp4"><img src="img/evergladesTop.png "></a>
         </div>
         <div class="col-md-7 ">
             <h2>La'Keisha Harris pursues her passion for law enforcement working at Everglades National Park.</h2>
@@ -87,17 +91,17 @@
 
         <p>When it’s time for lunch, Harris goes home since she lives at the park.</p>
 
+        <div class="col-md-7">
         <p>Then it’s back to the office, catching up with paperwork and going out on calls, if there are any. For instance, Harris sometimes responds to complaints of a visitor making too much noise or a generator running at night.</p>
-
-        <div class="col-md-4 col-md-offset-4" style="padding-top:20px;padding-bottom:30px;">
+        <p>Although there are similarities to local police work, Harris’ job is different due to the park setting, which involves protecting natural resources.</p>
+        <p>Wild animals, be they winged, water-bound or land-dwellers, are always nearby as Harris drives or walks around the park. Strolling along the Anhinga Trail, she often spots her favorite creature: the alligator.</p>
+        </div>
+        <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
             <img id="img-bottom" src="img/evergladesBottom.png">
         </div>
 
         <div class="col-md-12">
-            <p>Although there are similarities to local police work, Harris’ job is different due to the park setting, which involves protecting natural resources.</p>
-
-            <p>Wild animals, be they winged, water-bound or land-dwellers, are always nearby as Harris drives or walks around the park. Strolling along the Anhinga Trail, she often spots her favorite creature: the alligator.</p>
-
+        
             <p>“To me, they’re just so unique,” she says. “I give them a lot of respect.”</p>
 
             <p>Standing by her favorite part of the trail, she says, “You’ll be amazed what you hear and see around here,” pointing out several gators in the area.</p>
@@ -190,7 +194,50 @@
         </ul>
     </footer>
     <!-- container -->
+        <script>
+
+$(document).ready(function() {
+
+$('.video').magnificPopup({
+  src: 'https://vimeo.com/channels/staffpicks/124719070',
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>',
+
+               patterns: {
+   
+    vimeo: {
+      index: 'vimeo.com/',
+      id: '/',
+      src: '//player.vimeo.com/video/%id%?autoplay=1'
+    },
+   
+    // you may add here more sources
+
+  },
+
+  srcAction: 'iframe_src',
+
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+    });
+});
+
+</script>
     <script src="../js/jquery-1.11.2.min.js "></script>
+    <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
 </body>
 

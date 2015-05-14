@@ -6,7 +6,11 @@
     <title>Death Valley</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -53,7 +57,7 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><img src="img/dvTop.png ">
+        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/dv.mp4"><img src="img/dvTop.png "></a>
         </div>
         <div class="col-md-7 ">
             <h2>Death Valley National Park: Education that Rocks outside the classroom</h2>
@@ -80,19 +84,19 @@
             <p>“If you can’t reach them now, then you’ll never reach them,” Hadlock said. “Our society is not child-oriented despite what it claims.”</p>
 
             <p>Bailey Middle School, located in Las Vegas, resembles many urban schools.</p>
-
+            </div>
+            <div class="col-md-7">
             <p>"The only lights you see are the street lights," explained Jessica, one of the students.</p>
-        </div>
-        <div class="col-md-4 col-md-offset-4" style="padding-top:20px;padding-bottom:30px;">
-            <img id="img-bottom" src="img/dvBottom.png">
-        </div>
-        <div class="col-md-12">
             <p>To bring more schools like Bailey Middle to the park, Cole will live in Las Vegas and connect with local environmental educators.</p>
 
             <p>"Other parks have really strong education programs and ours is just getting off the ground," Cole said. "So, me being in Las Vegas makes it easier for me to go to a school or go to a certain area as opposed to somebody driving two and a half hours from Death Valley."</p>
-
             <p>Cole says she hopes that the kids will learn with Death Valley ROCKS when they do fun assignments such as looking for animal tracks in the sand or talking to a ranger one-on-one. Some of the kids also learn they have much in common with the rangers.</p>
-
+            </div>
+        <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
+            <img id="img-bottom" src="img/dvBottom.png">
+        </div>
+        <div class="col-md-12">
+            
             <p>Cole said her Mexican background helped with many students.</p>
 
             <p>"I found that a lot of people are surprised when I speak Spanish to them," Cole said. "And the kids come to me and speak Spanish to me because they probably feel a little more comfortable with somebody who speaks their language."</p>
@@ -156,7 +160,50 @@
         </ul>
     </footer>
     <!-- container -->
+     <script>
+
+$(document).ready(function() {
+
+$('.video').magnificPopup({
+  src: 'https://vimeo.com/channels/staffpicks/124719070',
+  type: 'iframe',
+  
+  
+  iframe: {
+     markup: '<div class="mfp-iframe-scaler">'+
+                '<div class="mfp-close"></div>'+
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                '<div class="mfp-title">Some caption</div>'+
+              '</div>',
+
+               patterns: {
+   
+    vimeo: {
+      index: 'vimeo.com/',
+      id: '/',
+      src: '//player.vimeo.com/video/%id%?autoplay=1'
+    },
+   
+    // you may add here more sources
+
+  },
+
+  srcAction: 'iframe_src',
+
+  },
+  callbacks: {
+    markupParse: function(template, values, item) {
+     values.title = item.el.attr('title');
+    }
+  }
+  
+  
+    });
+});
+
+</script>
     <script src="../js/jquery-1.11.2.min.js "></script>
+     <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
 </body>
 
