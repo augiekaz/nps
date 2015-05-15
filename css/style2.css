@@ -776,8 +776,9 @@ body {
 	/*background-color: #626953;*/
 	/*background-image: url(../img/greenCompressed.svgz);*/
 	/*background-image: url(../img/green.svg);*/
-	background-image: url(../img/backgorund_illustrationWhiteBg.svg);
-	background-image: url(../img/green.svg);
+	/*background-image: url(../img/backgorund_illustrationWhiteBg.svg);
+	background-image: url(../img/green.svg);*/
+	background-image: url(../img/greeni.png);
 	background-size: cover;
 	
 
@@ -797,16 +798,28 @@ body {
 
 }
 
-header {
+/*header {
 	width:100%;
 	height:10%;
 	background: rgba(218, 119, 68, 1); 
-	/*background-image: url('img/centennialBeige.svg');
-	background-size: cover;*/
+	background-image: url('img/centennialBeige.svg');
+	background-size: cover;
 }
 
 header img {
 	max-width: 50%;
+}*/
+
+header {
+	width:100%;
+	height:10%;
+	background: rgba(218, 119, 68, 1); 
+	/*background-image: url('../img/centennialBeige.svg');*/
+}
+
+header img {
+	width:10%;
+	height: 100%;
 }
 
 
@@ -860,7 +873,7 @@ nav ul li a {
 	/*margin-left: 15%;*/
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 5%;
 
 	 /*-webkit-transform: skew(-30deg);
 	   -moz-transform: skew(-30deg);
@@ -881,10 +894,11 @@ nav ul li a {
 
 .intro p {
 
-	font-size: 2.5vw;
+	/*font-size: 1.5vw;*/
+	font-size: 8px;
 	font-family: helvetica;
 	color: #fff;
-	width:77%;
+	width:90%;
 	/*margin-left: 100px;
 	margin-left: 10%;*/
 	/*line-height: 23px;*/
