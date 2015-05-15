@@ -359,6 +359,8 @@ ul {
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    /* Atlanta fixes */
+    
     .banner {
         height: 150px;
     }
@@ -380,5 +382,60 @@ ul {
         position: relative;
         left: -80px;
         line-height: 30px;
+    }
+    /* Channel Islands fixes */
+    
+    #channelBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    /* Everglades */
+    
+    #deathBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* Grand Canyon */
+    
+    #grandCanyonBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* San Juan */
+    
+    #sanJuanBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* Santa Monica */
+    
+    #santaMonicaBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
     }
 }

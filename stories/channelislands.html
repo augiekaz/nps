@@ -6,10 +6,10 @@
     <title>Channel Islands</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
-    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 </head>
@@ -27,7 +27,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav pull-right">
-               <li><a href="../index.html">Home</a>
+                <li><a href="../index.html">Home</a>
                 </li>
                 <li><a href="../index.html#about">About</a>
                 </li>
@@ -44,7 +44,7 @@
 
             </li>
             <li class="banner">
-                <h1>Park Ranger<span>Yvonne Morales</span>
+                <h1 id="channelBanner">Park Ranger<span>Yvonne Morales</span>
                     </h1>
             </li>
             <li class="bent-right ">
@@ -57,7 +57,9 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/santabarbara-channelislands.mp4"><img src="img/channelTop.png "></a>
+        <div class="col-md-5 text-center ">
+            <a class="video" href="../videoModal/mov/santabarbara-channelislands.mp4"><img src="img/channelTop.png ">
+            </a>
         </div>
         <div class="col-md-7 ">
             <h2>Behind the Scenes with Yvonne Morales at the Channel Islands National Park</h2>
@@ -88,14 +90,14 @@
             <p>What she found at the park was an embracing group of people and a worthwhile cause. She described her fellow employees as not only warm, but committed to the park and the visitors.</p>
 
             <p>"We're a very diverse park in that we have different people from all walks of life," Morales said, adding that she keeps in touch with co-workers from different departments in the park that she described as more of a community than a mere workplace.</p>
-           
 
-             </div>
-            <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
+
+        </div>
+        <div class="col-md-5" style="padding-top:20px;padding-bottom:30px;">
             <img id="img-bottom" src="img/channelBottom.png">
-            </div>
+        </div>
 
-            </div>
+        </div>
 
         <div class="col-md-12">
 
@@ -111,22 +113,26 @@
         <section class="next-section" id="related">
             <div class="col-sm-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="atlanta.html"><img src="img/atlantaRel.png "></a>
+                <a href="atlanta.html"><img src="img/atlantaRel.png ">
+                </a>
                 <p class="text-center">Martin Luther King Jr. National Historic Site</p>
             </div>
             <div class="col-sm-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="deathValley.html"><img src="img/dcRel.png "></a>
+                <a href="deathValley.html"><img src="img/dcRel.png ">
+                </a>
                 <p class="text-center">Death Valley National Park</p>
             </div>
             <div class="col-sm-3">
                 <h3 class="pull-right">Related</h3>
-                 <a href="grandCanyon.html"><img src="img/gcRel.png "></a>
+                <a href="grandCanyon.html"><img src="img/gcRel.png ">
+                </a>
                 <p class="text-center">Grand Canyon National Park</p>
             </div>
             <div class="col-sm-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="everglades.html"><img src="img/evergladesRel.png "></a>
+                <a href="everglades.html"><img src="img/evergladesRel.png ">
+                </a>
                 <p class="text-center">Everglades National Park</p>
             </div>
         </section>
@@ -136,54 +142,52 @@
             <!-- <li style="padding-left:30px;"><img src="../img/centennialWhite.svg"></li>
             <li style="padding-left:10px;margin-left:-20%;"><img src="../img/fypWhite.svg"></li> -->
             <img src="../img/centennialWhite.svg">
-             <img src="../img/fypWhite.svg">
+            <img src="../img/fypWhite.svg">
 
-                <li class="pull-right" style="color:white; padding-right:30px;">Credits</li>
+            <li class="pull-right" style="color:white; padding-right:30px;">Credits</li>
         </ul>
     </footer>
     <!-- container -->
-     <script>
+    <script>
+        $(document).ready(function () {
 
-$(document).ready(function() {
+            $('.video').magnificPopup({
+                src: 'https://vimeo.com/channels/staffpicks/124719070',
+                type: 'iframe',
 
-$('.video').magnificPopup({
-  src: 'https://vimeo.com/channels/staffpicks/124719070',
-  type: 'iframe',
-  
-  
-  iframe: {
-     markup: '<div class="mfp-iframe-scaler">'+
-                '<div class="mfp-close"></div>'+
-                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                '<div class="mfp-title">Some caption</div>'+
-              '</div>',
 
-               patterns: {
-   
-    vimeo: {
-      index: 'vimeo.com/',
-      id: '/',
-      src: '//player.vimeo.com/video/%id%?autoplay=1'
-    },
-   
-    // you may add here more sources
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">' +
+                        '<div class="mfp-close"></div>' +
+                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                        '<div class="mfp-title">Some caption</div>' +
+                        '</div>',
 
-  },
+                    patterns: {
 
-  srcAction: 'iframe_src',
+                        vimeo: {
+                            index: 'vimeo.com/',
+                            id: '/',
+                            src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        },
 
-  },
-  callbacks: {
-    markupParse: function(template, values, item) {
-     values.title = item.el.attr('title');
-    }
-  }
-  
-  
-    });
-});
+                        // you may add here more sources
 
-</script>
+                    },
+
+                    srcAction: 'iframe_src',
+
+                },
+                callbacks: {
+                    markupParse: function (template, values, item) {
+                        values.title = item.el.attr('title');
+                    }
+                }
+
+
+            });
+        });
+    </script>
     <script src="../js/jquery-1.11.2.min.js "></script>
     <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
