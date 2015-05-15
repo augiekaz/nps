@@ -54,7 +54,8 @@ h1 {
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
     /*color: darkgreen;*/
-    color:#333;
+    
+    color: #333;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -136,7 +137,6 @@ header {
     position: relative;
     height: 130px;
     width: 94vw;
-    max-width: 1400px;
     background-color: #b35a2a;
     top: 9px;
     background: rgba(179, 90, 42, 0.78);
@@ -159,7 +159,8 @@ header {
 
 .bent-right {
     position: absolute;
-   /* right: 0px;*/
+    /*right: 0px;*/
+    
     width: 3vw;
     height: 130px;
     background: rgba(179, 90, 42, 0.9);
@@ -317,7 +318,6 @@ article {
     font-weight: lighter;
     font-size: 1.5em;
 }
-
 /*footer {
     background-color: black;
     margin-bottom: 0px;
@@ -328,7 +328,7 @@ footer {
 }
 
 footer img {
-    width:5%;
+    width: 5%;
     margin-left: 1%;
 }
 
@@ -358,5 +358,84 @@ ul {
     #img-bottom {
         margin-top: 20px;
         margin-bottom: 30px;
+    }
+    /* Atlanta fixes */
+    
+    .banner {
+        height: 150px;
+    }
+    .bent-left {
+        height: 150px;
+        top: 80px;
+    }
+    .bent-right {
+        height: 150px;
+        top: 80px;
+    }
+    #atlantaBanner {
+        font-size: 3.5em;
+    }
+    #atlantaBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+    }
+    /* Channel Islands fixes */
+    
+    #channelBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    /* Everglades */
+    
+    #deathBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* Grand Canyon */
+    
+    #grandCanyonBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* San Juan */
+    
+    #sanJuanBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
+    }
+    /* Santa Monica */
+    
+    #santaMonicaBanner span {
+        font-size: 0.5em;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        left: -80px;
+        line-height: 30px;
+        padding-top: 10px
     }
 }

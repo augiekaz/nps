@@ -1,4 +1,5 @@
 /* General */
+
 html,
 body {
     overflow-x: hidden;
@@ -20,7 +21,9 @@ body {
     background-position: center 100%;
 }
 
-
+p {
+    text-shadow: 0.5px 0.5px 2px white;
+}
 
 .container {
     padding: 50px;
@@ -37,8 +40,9 @@ body {
 
 .navbar-default .navbar-nav> li>a {
     background-color: transparent;
-   /* color: darkgreen;*/
-    color:#333;
+    /* color: darkgreen;*/
+    
+    color: #333;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -97,7 +101,8 @@ header {
     -moz-transform: skew(225deg);
     -o-transform: skew(225deg);
     /*background: #b35a2a;*/
-    background: rgba(218, 119, 68, 1);
+    
+    background: rgba(196, 116, 80, 1);
     width: 700px;
 }
 
@@ -179,10 +184,9 @@ footer {
 }
 
 footer img {
-    width:5%;
+    width: 5%;
     margin-left: 1%;
 }
-
 
 .wrapper {
     text-align: center;
@@ -246,7 +250,6 @@ footer img {
     font-size: 18px;
     float: left;
 }
-
 /* Breakpoints */
 
 @media (max-width: 1183px) {

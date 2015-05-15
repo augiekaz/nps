@@ -6,7 +6,7 @@
     <title>Atlanta</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/stories.css" />
-    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css"> 
+    <link rel="stylesheet" href="../videoModal/dist/magnific-popup.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -44,7 +44,7 @@
 
             </li>
             <li class="banner">
-                <h1>Park Rangers<span>Miriam Spruill, Michelle Lewis and Judy Forte</span>
+                <h1 id="atlantaBanner">Park Rangers<span>Miriam Spruill, Michelle Lewis and Judy Forte</span>
                     </h1>
             </li>
             <li class="bent-right ">
@@ -57,7 +57,9 @@
         </div>
     </header>
     <article class="container" id="article">
-        <div class="col-md-5 text-center "><a class="video" href="../videoModal/mov/atlanta.mp4"><img src="img/atlTop.png "></a>
+        <div class="col-md-5 text-center ">
+            <a class="video" href="../videoModal/mov/atlanta.mp4"><img src="img/atlTop.png ">
+            </a>
         </div>
         <div class="col-md-7 ">
             <h2 class="text-center">Park employees share the </br>inspiration of Dr. King</h2>
@@ -95,7 +97,7 @@
         </div>
         <div class="col-md-12">
 
-             <p>“There aren’t a lot of women, especially African-American women, working in law enforcement for the National Park Service,” said Michelle Lewis, law enforcement park ranger at Martin Luther King, Jr. National Historic Site. “This shortage has really created some new opportunities.”</p>
+            <p>“There aren’t a lot of women, especially African-American women, working in law enforcement for the National Park Service,” said Michelle Lewis, law enforcement park ranger at Martin Luther King, Jr. National Historic Site. “This shortage has really created some new opportunities.”</p>
             <p>Lewis, 29, became involved with the National Park Service fresh out of high school. With the Park Service, she has worked a variety of jobs ranging from working with sea turtles and endangered birds at Cape Hatteras National Seashore to working in the interpretation department at Fort Raleigh, North Carolina.</p>
             <p>“The Park Service really does provide an opportunity to get experience in just about whatever you want to do because the work is so varied,” Lewis said. “I was able to try some different things and do some work that I definitely wouldn’t have gotten to do otherwise.”</p>
             <p>
@@ -136,22 +138,26 @@
         <section class="next-section" id="related">
             <div class="col-md-3">
                 <h3 class="pull-right">Related</h3>
-                 <a href="deathValley.html"><img src="img/dcRel.png "></a>
+                <a href="deathValley.html"><img src="img/dcRel.png ">
+                </a>
                 <p class="text-center">Death Valley National Park</p>
             </div>
             <div class="col-md-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="grandCanyon.html"><img src="img/gcRel.png "></a>
+                <a href="grandCanyon.html"><img src="img/gcRel.png ">
+                </a>
                 <p class="text-center">Grand Canyon National Park</p>
             </div>
             <div class="col-md-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="everglades.html"><img src="img/evergladesRel.png "></a>
+                <a href="everglades.html"><img src="img/evergladesRel.png ">
+                </a>
                 <p class="text-center">Everglades National Park</p>
             </div>
             <div class="col-md-3">
                 <h3 class="pull-right">Related</h3>
-                <a href="fortDavis.html"><img src="img/davisRel.png "></a>
+                <a href="fortDavis.html"><img src="img/davisRel.png ">
+                </a>
                 <p class="text-center">Fort Davis</p>
             </div>
         </section>
@@ -161,56 +167,54 @@
             <!-- <li style="padding-left:30px;"><img src="../img/centennialWhite.svg"></li>
             <li style="padding-left:10px;margin-left:-20%;"><img src="../img/fypWhite.svg"></li> -->
             <img src="../img/centennialWhite.svg">
-             <img src="../img/fypWhite.svg">
+            <img src="../img/fypWhite.svg">
 
-                <li class="pull-right" style="color:white; padding-right:30px;">Credits</li>
+            <li class="pull-right" style="color:white; padding-right:30px;">Credits</li>
         </ul>
     </footer>
     <!-- container -->
-        <script>
+    <script>
+        $(document).ready(function () {
 
-$(document).ready(function() {
+            $('.video').magnificPopup({
+                src: 'https://vimeo.com/channels/staffpicks/124719070',
+                type: 'iframe',
 
-$('.video').magnificPopup({
-  src: 'https://vimeo.com/channels/staffpicks/124719070',
-  type: 'iframe',
-  
-  
-  iframe: {
-     markup: '<div class="mfp-iframe-scaler">'+
-                '<div class="mfp-close"></div>'+
-                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                '<div class="mfp-title">Some caption</div>'+
-              '</div>',
 
-               patterns: {
-   
-    vimeo: {
-      index: 'vimeo.com/',
-      id: '/',
-      src: '//player.vimeo.com/video/%id%?autoplay=1'
-    },
-   
-    // you may add here more sources
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">' +
+                        '<div class="mfp-close"></div>' +
+                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                        '<div class="mfp-title">Some caption</div>' +
+                        '</div>',
 
-  },
+                    patterns: {
 
-  srcAction: 'iframe_src',
+                        vimeo: {
+                            index: 'vimeo.com/',
+                            id: '/',
+                            src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        },
 
-  },
-  callbacks: {
-    markupParse: function(template, values, item) {
-     values.title = item.el.attr('title');
-    }
-  }
-  
-  
-    });
-});
+                        // you may add here more sources
 
-</script>
+                    },
+
+                    srcAction: 'iframe_src',
+
+                },
+                callbacks: {
+                    markupParse: function (template, values, item) {
+                        values.title = item.el.attr('title');
+                    }
+                }
+
+
+            });
+        });
+    </script>
     <script src="../js/jquery-1.11.2.min.js "></script>
-     <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
+    <script src="../videoModal/dist/jquery.magnific-popup.js"></script>
     <script src="../js/bootstrap.min.js "></script>
 </body>
 
