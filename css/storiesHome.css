@@ -188,6 +188,14 @@ footer img {
     margin-left: 1%;
 }
 
+footer a {
+    color:#fff;
+}
+
+footer a:hover {
+    color:#fff;
+}
+
 .wrapper {
     text-align: center;
 }

@@ -327,6 +327,14 @@ footer {
     background: #000;
 }
 
+footer a {
+    color:#fff;
+}
+
+footer a:hover {
+    color:#fff;
+}
+
 footer img {
     width: 5%;
     margin-left: 1%;
