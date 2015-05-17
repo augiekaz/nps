@@ -127,6 +127,7 @@ header {
     
     background-size: cover;
     background-repeat: no-repeat;
+    max-width: 1400px;
 }
 
 .list-inline>li {
@@ -137,6 +138,7 @@ header {
     position: relative;
     height: 130px;
     width: 94vw;
+    max-width: 1400px;
     background-color: #b35a2a;
     top: 9px;
     background: rgba(179, 90, 42, 0.78);
@@ -169,6 +171,7 @@ header {
     -o-transform: skewY(30deg);
     z-index: 1;
     margin-top: 20px;
+
 }
 
 .banner h1 {
@@ -447,3 +450,9 @@ ul {
         padding-top: 10px
     }
 }
+
+@media (min-width: 1480px) { 
+    .list-inline .bent-right {
+        display: none;
+    }
+}    

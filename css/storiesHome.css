@@ -25,6 +25,11 @@ p {
     text-shadow: 0.5px 0.5px 2px white;
 }
 
+.pull-left {
+  /* float: left!important; */
+  float: none; /* keeps caption from breaking right on wide screens */
+}
+
 .container {
     padding: 50px;
     top: -20px;
